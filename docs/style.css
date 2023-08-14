@@ -1,0 +1,19 @@
+html {
+    /*
+    background-image: url("srdce.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    background-color: darkblue;
+
+    font-family: sans-serif;
+    font-size: 150%;
+    color: #6666ff;
+    /*
+    text-shadow: 2px 2px black;
+    */
+}
+
+

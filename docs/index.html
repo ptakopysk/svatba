@@ -5,25 +5,50 @@
     <title>Svatba Anna Eisenreichová a Rudolf Rosa</title>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <style>
-       body, h1, h2 {
+       html, body, h1 {
+            margin: 0;
+            color: red;
+            font-family: Nunito, sans-serif;
+       }
+       body {
             background-image: url("pozadi.png");
+            max-width: 1000px;
+            padding: 1em 1em 1em 1em;
+            margin: 0px auto;
+       }
+       body, h1, h2 {
             text-align: center;
        }
        p, li {
             text-align: justify;
        }
 
-       html, body, h1 {
-            margin: 0;
-            padding: 0;
-            color: red;
-            font-family: Nunito, sans-serif;
-        }
        h1 img {
-          max-height:80vh;
-          max-width:100vw;
+          width: 100%;
+          /*max-height:80vh;*/
        }
        a {color: red !important; }
+       table {
+           /*border-collapse: collapse;*/
+           border-spacing: 1ex;
+       }
+       th {
+           font-variant: small-caps;
+       }
+       td {
+           /*border: 1px solid black;*/
+           background-color: rgba(255, 255, 255, 0.3);
+       }
+       th, td {
+           padding: 2px 1ex 2px 1ex;
+       }
+       thead th {
+           background-color: rgba(242, 194, 142, 1);
+       }
+       tbody th {
+           background-color: rgba(247, 90, 85, 1);
+           color: white;
+       }
      </style>
 </head>
 <body>
@@ -36,7 +61,7 @@
             <li> <a href="#prehled">Přehled svatebních aktivit</a> </li>
             <li> <a href="#podrobnosti">Podrobnosti o svatebních aktivitách</a> </li>
             <li> <a href="#dary">Svatební dary</a> </li>
-            <li> <a href="#formular">Formulář</a> </li>
+            <li> <a href="#formular">Svatební formulář</a> </li>
         </menu>
         
         <a name="osobni"></a>
@@ -59,64 +84,233 @@
         zúčastnit. Klidně se zúčastni všeho, pokud Ti to všechno zní dobře.
         Ale klidně se zúčastni třebas jen jedné aktivity.</p>
 
-        TODO tabulka
-
-
-
-co	kdy	od - do	kde	"stručně, co je důležité"
-svatební obřad	čtvrtek 29. února 	14:00 - 15:00	"Tereziánský sál 
-Břevnovského kláštera"	"vstup od 13:30, ne jehlové podpatky,
-ne házení čehokoli na novomanžele"
-párty	pátek 1. března	16:00 - 03:00	"Vinohradský pivovar, 
-Korunní 106"	" raut, odpoledne až večer kapely
-k tanci i poslechu, poté jam session"
-online šifrovačka	sobota 2. března	15:00 - 20:00	"kdekoli s připojením
-na internet"	"po Sendviči se potkáme online 
-ve 20:30 na Zoomu (link pošleme)"
-zoo	neděle 3. března	13:00 - 17:00	"sraz u hlavního vstupu 
-do  ZOO Praha v Troji"	"vstupné na tobě, plán cesty  uděláme podle nejoblíbenějších zvířátek"
-deskovky	úterý 5. března	17:00 - 23:00	"Standard Cafe, 
-Karolíny Světlé 321"	"hrát se bude v přízemí kavárny, deskovky s sebou"
-procházka s kafem	středa 6. března	14:00 - 18:00	"sraz u sousoší Tychona Brahe 
-a Johanna Keplera na Pohořelci"	"procházka po našich oblíbených místech a kavárnách, hrneček s sebou"
-svatební koncert	pátek 8. března	"17:00 -
-??"	"Music City Club, 
-Ocelářská 937"	"zahrají Žamboši, Choroši, Jerry a Honza Jícha, pak se bude hrát do rána!"
+        <table>
+            <thead>
+                <tr><th>co</th><th>kdy</th><th>od - do</th><th>kde</th><th>stručně, co je důležité</th></tr>
+            </thead>
+            <tbody>
+                <tr><th>svatební obřad</th><td>čtvrtek 29. února </td><td>14:00 - 15:00</td><td>Tereziánský sál Břevnovského kláštera</td><td>vstup od 13:30, ne jehlové podpatky, ne házení čehokoli na novomanžele</td></tr>
+                <tr><th>párty</th><td>pátek 1. března</td><td>16:00 - 03:00</td><td>Vinohradský pivovar, Korunní 106</td><td> raut, odpoledne až večer kapely k tanci i poslechu, poté jam session</td></tr>
+                <tr><th>online šifrovačka</th><td>sobota 2. března</td><td>15:00 - 20:00</td><td>kdekoli s připojením na internet</td><td>po Sendviči se potkáme online ve 20:30 na Zoomu (link pošleme)</td></tr>
+                <tr><th>zoo</th><td>neděle 3. března</td><td>13:00 - 17:00</td><td>sraz u hlavního vstupu do  ZOO Praha v Troji</td><td>vstupné na tobě, plán cesty  uděláme podle nejoblíbenějších zvířátek</td></tr>
+                <tr><th>deskovky</th><td>úterý 5. března</td><td>17:00 - 23:00</td><td>Standard Cafe, Karolíny Světlé 321</td><td>hrát se bude v přízemí kavárny, deskovky s sebou</td></tr>
+                <tr><th>procházka s kafem</th><td>středa 6. března</td><td>14:00 - 18:00</td><td>sraz u sousoší Tychona Brahe a Johanna Keplera na Pohořelci</td><td>procházka po našich oblíbených místech a kavárnách, hrneček s sebou</td></tr>
+                <tr><th>svatební koncert</th><td>pátek 8. března</td><td>17:00 - ??:??</td><td>Music City Club, Ocelářská 937</td><td>zahrají Žamboši, Choroši, Jerry a Honza Jícha, pak se bude hrát do rána!</td></tr>
+            </tbody>
+        </table>
 
         <a name="podrobnosti"></a>
         <h2>Podrobnosti o svatebních aktivitách</h2>
 
 
-Na párty jsme pro všechny zakoupili raut včetně piva, vína a nealko nápojů. Na ostatních aktivitách je to na Tobě.
+        <p>Na párty jsme pro všechny zakoupili raut včetně piva, vína a nealko
+        nápojů. Na ostatních aktivitách je to na Tobě.</p>
 
- Prosíme, pokud je to jen trochu možné, zvol cestu městskou hromadnou dopravou. V Praze to není 
-s parkováním úplně jednoduchý, leckde se nedá zaparkovat vůbec, nebo jen hodně složitě. 
+        <p>Prosíme, pokud je to jen trochu možné, zvol cestu městskou hromadnou dopravou. V Praze to není 
+        s parkováním úplně jednoduchý, leckde se nedá zaparkovat vůbec, nebo jen hodně
+        složitě.</p>
 
-        TODO texty
-        
+
+
+
+
+
+
+
+
+
+        <h3>Čtvrtek 29.2. obřad</h3>
+        <p>Civilní obřad bude od 14:00 v Tereziánském sále Břevnovského
+        kláštera.</p>
+        <p>Sál je pro nás otevřen od 13:30 do 15:00.</p>
+
+        <p>Na obřadu budeme nejkrásnější a nejčerstvější</p>
+        <p>V sále se nesmí házet rýže, okvětní lístky, konfety, ani žádné jiné
+        předměty 🙂. Také nejsou povolené bublifuky. V prostorách není
+        povoleno nosit jehlové podpatky. Své mazlíčky prosím nechejte doma.
+        Kočárky je možné nechat dole pod schody.</p>
+        <p>Po obřadu bude hostina v užším rodinném kruhu (rodiče, sourozenci,
+        svědci s partnery), ostatní svatebčané mají pro ten den volno 🙂</p>
+
+        <p><a href="https://mapy.cz/s/logakoloze">Mapa</a></p>
+
+        <p>Zastávka tramvaje: Břevnovský klášter</p>
+
+<h3>Pátek 1.3. párty</h3>
+<p>Svatební párty bude od 16:00 ve Vinohradském pivovaru </p>
+
+<p>Anička bude ještě v krásných šatech, které má půjčené jen do neděle, Ruda
+plánuje být krásný celý týden 🙂. Zkrátka, tohle bude hned po obřadu ta asi
+nejvíc svatební součást svatebního týdne.</p>
+
+<p>Spodní patro pivovaru je zamluvené jen pro nás až do 3 hodin ráno.</p>
+<p>V salonku bude hrát živá hudba k tanci i poslechu, bude se házet kytkou, a
+budeme provádět podobné tradiční svatební aktivity. Po taneční části zahraje
+naše oblíbená kapela Vehiba, která bude hrát taky k poslechu a klidně i tanci
+🙂. V pozdějších hodinách se od tance přesuneme ke stolům, kde se sejde
+několik našich hudebních přátel z kapely Isara a rádi si společně se
+svatebčany zazpívají. Věříme, že se zapojíš, vezmi s sebou, na co hraješ
+🙂</p>
+ 
+<p>Od hudby si budeš moci odpočinout u stolů ve vedlejší místnosti, kde pro
+vás bude zdarma připravený bohatý raut včetně nápojů (několik druhů skvělého
+alkoholického i nealkoholického piva, víno, nealkoholické nápoje).</p>
+
+<p>V salonku budou natažené šňůry pro zavěšení svatebních přání a drobných
+darů. Prosíme proto o takové svatební dary, které se udrží za kolíček na šňůře
+🙂</p>
+
+<p><a href="https://mapy.cz/s/meporefuce">Mapa</a></p>
+
+<p>Zastávka tramvaje a autobusu: Orionka; kousek je také metro A Flora</p>
+
+<h3>Sobota 2.3. šifrovačka</h3>
+<p>Shodou okolností se od 15:00 do 20:00 hodin koná online šifrovačka Sendvič,
+které se jako obvykle účastníme s naším týmem “Divize nulou”.Můžete se také
+zúčastnit, schválně kdo z vás náš tým porazí 🙂. Po Sendviči se můžeme sejít
+online na Zoomu ve 20:30, a popovídat si o tom, jak se vám to líbilo a jestli
+se třeba někdy přidáš i na nějakou šifrovačku v terénu 🙂.</p>
+
+<p>Šifrovačku nijak neorganizujeme, každý tým se musí přihlásit sám. Vstup na
+šifrovačku je zdarma, je jen třeba se registrovat na jejich stránkách.
+Dobrovolně je možné přispět na jakoukoli neziskovku libovolnou částkou. Budeme
+rádi, když tak učiníte 🙂. Během hry vám nebudeme moci radit, protože budeme
+luštit. Ale rádi navzájem propojíme zájemce, protože ve víc lidech se líp
+luští. Samozřejmě můžeš zapojit i jiné lidi než svatebčany.</p>
+<p>Specifikem Sendviče je luštění ve dvou ‘kolech’, první část šifer se
+odkryje v 15:00 a čas na luštění je do 17:00, potom je hodina pauza na
+sendvič, a poté se v 18:00 odkryje druhá část šifer, na které je čas do 20:00.
+Nezapomeňte si proto doma připravit všechno na dobrou sváču 🙂</p>
+
+<p><a href="https://www.hrasendvic.cz/">Web šifrovačky Sendvič</a></p>
+
+<h3>Neděle 3.3. ZOO</h3>
+<p>Sejdeme se ve 13:00 u hlavního vstupu do ZOO. ZOO má otevřeno do 17:00.</p>
+
+<p>Rádi, ale dost málo, chodíme do ZOO. Tak jsme si řekli, že to třeba někdo
+má stejně 🙂. Vstup si bude hradit každý sám. Pokud by dávalo smysl nějaké
+rodinné nebo skupinové vstupné, domluvíme to na místě, podle toho, kolik nás
+bude. Poud by byl vstup do ZOO pro Tebe příliš velkým výdajem, ale hodně bys o
+to stál*a, napiš nám, pozveme Tě 🙂. Po vstupu budeme hlasovat o oblíbených
+zvířátkách, aby nebyl nikdo smutnej a každej viděl to svoje (pokud teda zrovna
+nebude spát…). Anička se jistě ráda zastaví u papoušků a jakýchkoli jiných
+voliér. Jelikož pražská ZOO nemá ptakopyska, bude Ruda trošku smutný. Ale i
+tak se rád koukne do Darwinova kráteru na ďábly medvědovité nebo na Šišku a
+celou luskouní rodinu. Jaký zvířátko potřebuješ vidět ty?</p>
+
+<p><a href="https://mapy.cz/s/cavuholejo">Mapa</a></p>
+
+<p>Zastávka autobusu: Zoo Praha - Troja (bus č. 112 a 234)</p>
+
+<h3>Úterý 5.3. deskovky</h3>
+<p>decentralizované, rezervace prostor</p>
+
+<h3>Středa 6.3. procházka s kafem</h3>
+<p>Sejdeme se ve 14:00 na Pohořelci před pomníkem Tychona Brahe a Johanna
+Keplera kam Anička chodila na gympl. Je to zastávka tram č. 22.</p>
+
+<p>Ukážeme vám naše oblíbená místa v centru Prahy. Občas se někde zastavíme na
+kafe; pokud chcete být eco-friendly, můžete si vzít vlastní hrneček.</p>
+
+<p>Na Pohořelci nebudeme startovat jen tak náhodou. Jednak je to skvělý
+výchozí bod pro objevování prahy, jednak tam Anička chodila na gympl. Z
+Pohořelce dojdeme přes Nový svět až na Malou Stranu, kde Ruda studoval a
+pracoval. Přejdme most na Staré Město, kde zase studovala Anička. Různými
+průchody a úzkými uličkami dobloudíme až na naše oblíbené Haštalské náměstí, a
+přitom se fikaně vyhneme Staroměstskému náměstí i největším davům turistům 🙂
+Přesný program budeme dávat dohromady později. Pokud se budeš chtít stavit jen
+na dobrou kávu, jistě budeme mít delší zastávku u kostela sv. Haštala na
+Haštalském náměstí. Pokud tě tedy na procházky moc neužije, můžeš se stavit
+jen tam a dát si s námi dobrou kávu z blízké kavárny 🙂. Orientační čas
+zastavení na Haštalském náměstí dáme vědět. </p>
+<p>Můžeš se samozřejmě připojovat a odpojovat v průběhu, někdo z účastníků
+bude k dispozici na telefonu ke sdílení bližší polohy a případné opozdilce
+nabereme cestou.</p>
+
+<p><a href="https://mapy.cz/s/cemarajoca">Mapa</a></p>
+
+<p>Zastávka: tramvaje Pohořelec (tram č. 22 a 23)</p>
+
+
+<h3>Pátek 8.3. koncert a zpívaná</h3>
+<p>Koncert začne v 17:00, přijít můžete už okolo 16:30, abyste se stihli
+pohodlně usadit.</p>
+
+<p>Na svatebním koncertě zahrají naše oblíbené kapeli a písničkáři: Choroši,
+Jerry, Žamboši a Honza Jícha. </p>
+<p>Po skončení koncertu následuje jam session až do pozdních ranních hodin.
+Budeme rádi, když se přinesete své hudební nástroje a zazpíváte si s námi
+folkové i jiné písničky. Klub máme zamluvený až do sobotního poledne, takže
+prostor na společné jamování bude dost a dost 🙂.
+!!!!!!!!!!!!!!!!!!!TODOObčerstvení bude částečně samozajištěné. Na baru si
+můžete otevřít vlastní účet, nebo platit hned po objednání, pití bude na této
+akci na každém. </p>
+
+<p>Jde o poklidnou poslechovou akci, na které budete mít příležitost si
+poslechnout naše oblíbené kapely.</p>
+<p>Bude samozřejmě i možnost si prostě popovídat, a to jednak v přestávkách,
+jednak ve vedlejší místnosti. Vlastní koncert ale prosím svým povídáním
+nerušme.</p>
+
+<p>Večer bude moderovat Anička s Rudou. Vybrali jsme si kapely, které jsou pro
+nás důležité, a tak se spíš než oficiality dozvíš, co nás s těmito hudebníky a
+jejich písničkami pojí 🙂</p>
+
+<p>Jestli si o žádné z kapel nikdy neslyšel*a a chceš si radši okouknout, o
+čem to bude, tak mrkni třeba sem:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6DUWglufHYM">Žamboši a jejich Louvre </a>
+<li><a href="https://www.youtube.com/watch?v=TrZ8OXx-LsU">Honza Jícha a Zákon smůly</a>
+<li><a href="https://www.youtube.com/watch?v=G6Nrh5Q3QGw">Choroši a Velryba</a>
+<li><a href="https://www.youtube.com/watch?v=GSVsQjWgUsE">Jerry Jeroným Lešner</a>
+</ul>
+
+<p><a href="https://mapy.cz/s/gacolesopo">Mapa</a></p>
+
+<p>Zastávka autobusů a metra B Českomoravská, případně tramvajová zastávka
+Poliklinika Vysočany</p>
+
+
+
+
+
+
+
+
         <a name="dary"></a>
         <h2>Svatební dary</h2>
 
-Nejvíc nás potěší, když přijdeš a zúčastníš se spolu s námi některých aktivit.
-Pokud nám chceš něco dát, budeme rádi za finanční příspěvek na bankovní účet 184310459/0600 (můžeš načíst QR kód bankovní appkou) či hotově na místě. 
+        <img style="float: right; max-width: 200px;" src="platba.png" alt="Platba: 184310459/0600">
 
-Peníze jsou dost neosobní, proto je udělejme osobnější! Zkus nám darovat takovou částku, 
-která vyjadřuje něco, co nějak souvisí se vztahem, který s námi máš. Například:
+        <p>Nejvíc nás potěší, když přijdeš a zúčastníš se spolu s námi některých aktivit.</p>
+        <p>Pokud nám chceš něco dát, budeme rádi za finanční příspěvek na bankovní účet 184310459/0600 (můžeš načíst QR kód bankovní appkou) či hotově na místě. </p>
 
-kolikrát jsme se setkali
-kolikrát jsme si vyměnili úsměv
-kolik písní jsme spolu zazpívali
-kolik slov jsme spolu prohodili
-ve kterém roce jsme se setkali poprvé
-jak daleko od sebe bydlíme
-...
-A samozřejmě nám dej například ve zprávě pro příjemce vědět, co tato částka vyjadřuje :-) 
+        <p>Peníze jsou dost neosobní, proto je udělejme osobnější! Zkus nám darovat takovou částku, 
+        která vyjadřuje něco, co nějak souvisí se vztahem, který s námi
+        máš.</p>
+        <p>Například:</p>
+        <ul>
+            <li>kolikrát jsme se setkali
+            <li>kolikrát jsme si vyměnili úsměv
+            <li>kolik písní jsme spolu zazpívali
+            <li>kolik slov jsme spolu prohodili
+            <li>ve kterém roce jsme se setkali poprvé
+            <li>jak daleko od sebe bydlíme
+            <li>...
+        </ul>
+        <p>A samozřejmě nám dej například ve zprávě pro příjemce vědět, co tato částka vyjadřuje :-) 
 
-Chceš-li nám dát i něco fyzického (třeba přání), tak prosíme, ať to je něco, co jde zavěsit na kolíček 
-na šňůru, která bude natažená podél zdi na párty. Jinam než na obřad nebo párty prosíme fyzické dary nenos.
+        <p>Chceš-li nám dát i něco fyzického (třeba přání), tak prosíme, ať to je něco, co jde zavěsit na kolíček 
+na šňůru, která bude natažená podél zdi na párty. Jinam než na obřad nebo
+párty prosíme fyzické dary nenos.</p>
+
         <a name="formular"></a>
+        <h2>Svatební formulář</h2>
 
-        Až si vybereš, kterých aktivit se chceš účastnit, vyplň nám prosím svatební formulář na adrese  http://svatba.nikde.eu. Tam se taky dozvíš podrobnosti o jednotlivých akcích. Formulář prosím vyplň nejpozději do 31. ledna 2024. Díky!
+        <p>Až si vybereš, kterých aktivit se chceš účastnit, vyplň nám prosím
+        svatební formulář níže. Formulář prosím vyplň nejpozději do 31. ledna
+        2024. Díky!</p>
         
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSflK7n8Xvmt9tvXIQyKYYpgBoCE9kYRuq54dBAo7WZv17zP6g/viewform?embedded=true"

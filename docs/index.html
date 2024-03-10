@@ -26,6 +26,13 @@
             text-align: justify;
        }
 
+       menu {
+            margin-block-start: 1px;
+       }
+       menu li menu li {
+            list-style-type: circle;
+       }
+
        img {
           max-width: 80%
        }
@@ -39,6 +46,14 @@
            position: relative;
            top: -20px;
            left: -118px;
+           background-color: white;
+       }
+       .icon_fullsize {
+           width: 60px;
+           height: 60px;
+           position: relative;
+           top: -20px;
+           left: -80px;
            background-color: white;
        }
        table {
@@ -142,76 +157,68 @@
         <h2 id="podrobnosti">Co tu najdeš</h2>
 
             <menu>
-             <li><a href="#ztraty">Ztráty a nálezy</a></li>
-             <li><a href="#album">Sdílené fotoalbum</a></li>
                 <li>Čtvrtek 29.2.
-                    <ul>
+                    <menu>
                         <li><a href="#tramvaj">Cesta svatební tramvají</a></li>
                         <li><a href="#orad">Obřad v Břevnovském klášteře</a></li>
                         <li><a href="#obed">Obědovečeře s rodinou</a></li>
-                    </ul>
+                        <li><a href="#hotel">Ubytování na hotelu</a></li>
+                    </menu>
                 </li>
                 <li>Pátek 1.3.
-                    <ul>
+                    <menu>
                         <li><a href="#hastal">Focení u Haštala</a></li>
                         <li><a href="#party">Párty ve Vinohradském pivovaru</a></li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Sobota 2.3.
-                    <ul>
+                    <menu>
                         <li><a href="#sendvic">Šifrovačka Sendvič</a></li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Neděle 3.3.
-                    <ul>
+                    <menu>
                         <li><a href="#zoo">Výlet do zoo</a></li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Pondělí 4.3.
-                    <ul>
+                    <menu>
                         <li>Odpočívali jsme a nedělali jsme nic</li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Úterý 5.3.
-                    <ul>
+                    <menu>
                         <li><a href="#deskovky">Hraní deskových her</a></li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Středa 6.3.
-                    <ul>
+                    <menu>
                         <li><a href="#prochazka">Procházka Prahou s kafem</a></li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Čtvrtek 7.3.
-                    <ul>
+                    <menu>
                         <li>Pauza (ale byli jsme večer na Notování)</li>
-                    </ul>
+                    </menu>
                 </li>
                 <li>Pátek 8.3.
-                    <ul>
+                    <menu>
                         <li><a href="#koncert">Koncert</a></li>
                         <li><a href="#zpivana">Zpívaná</a> (aka jam session)</li>
-                    </ul>
+                    </menu>
                 </li>
+             <li><a href="#album">Sdílené fotoalbum</a></li>
              <li><a href="#dotaznik">Svatební dotazník</a></li>
              <li><a href="#dary">Svatební dary</a></li>
              <li><a href="#udrzitelnost">Udržitelnost</a></li>
-             <li><a href="#kontakt">Kontakty></a></li>
+             <li><a href="#ztraty">Ztráty a nálezy</a></li>
+             <li><a href="#kontakt">Kontakty</a></li>
         </menu>
 
-        <h2 id="album">Sdílené fotoalbum</h2>
 
-        <p>Pokud s námi chceš sdílet nějaké svoje fotky z naší svatby, můžeš
-        je přinahrát do sdíleného fotoalba zde:</p>
-        <p><a href="https://photos.app.goo.gl/2yUcBy6N1KseyK2K7">Sdílené fotoalbum na Google Photos</a></p>
-        <p>Níže postupně přidáváme samostatná alba s fotkami z jednotlivých akcí, ty si
-        můžeš prohlížet a stahovat, a pokud se přihlásíš Google účtem tak i
-        komentovat. Pokud si nepřeješ, aby některá z fotek byla zveřejněná,
-        napiš nám, a my ji schováme.</p>
-
-        <a href="diagram.png"> 
-        <img src="diagram.png">
-        </a>
+        <p>Svatebčané od nás dostávali tento diagram, kterým jim pomáhal si
+        vybrat, kterých akcí se zúčastní:</p>
+        <a href="diagram.png" title="Svatební diagram"><img src="diagram.png"><img src="icon_fullsize.png" class="icon_fullsize"></a>
 
 
 
@@ -546,6 +553,16 @@ budou):</p>
 <img src="foto_zpivana.jpeg">
 
 
+        <h2 id="album">Sdílené fotoalbum</h2>
+
+        <p>Pokud s námi chceš sdílet nějaké svoje fotky z naší svatby, můžeš
+        je přinahrát do sdíleného fotoalba zde:</p>
+        <p><a href="https://photos.app.goo.gl/2yUcBy6N1KseyK2K7">Sdílené fotoalbum na Google Photos</a></p>
+        <p>Níže postupně přidáváme samostatná alba s fotkami z jednotlivých akcí, ty si
+        můžeš prohlížet a stahovat, a pokud se přihlásíš Google účtem tak i
+        komentovat. Pokud si nepřeješ, aby některá z fotek byla zveřejněná,
+        napiš nám, a my ji schováme.</p>
+
 
         <h2 id="dotaznik">Svatební dotazník</h2>
 
@@ -641,6 +658,12 @@ párty prosíme fyzické dary nenos.</p>
             <li>jídla zbylo velmi málo a prakticky vše si svatebčané odnesli
                 jako výslužky, nedělali jsme zvlášť výslužky</li>
         </ul>
+
+        <h2 id="ztraty">Ztráty a nálezy</h2>
+
+        <p>Našli jsme dvě šály. Fotky dodáme sem.</p>
+
+        <p>Rudolf možná někde ztratil sponu do vlasů.</p>
 
         <h2 id="kontakt">Kontakty</h2>
 
